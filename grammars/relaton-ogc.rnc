@@ -11,7 +11,9 @@ editorialgroup = element editorialgroup {
 
 BibDataExtensionType =
   attribute schema-version { text }?,
-    doctype?, docsubtype?, editorialgroup, ics*
+    doctype?, docsubtype?, flavor, editorialgroup, ics*
+
+stage = element stage { StageType }
 
 }
 
@@ -25,3 +27,5 @@ subcommittee =
 workgroup =
   element workgroup { IsoWorkgroup }
 
+StageType = "rfc" | "candidate" | "published" | "deprecated" | "retired" | "legacy" | "rescinded" | "draft" | "work-item-draft" |
+  "swg-draft" | "oab-review" | "public-ref" | "tc-vote" | "approved" | "deprecated" | "rescinded" | "retired" | "legacy"
