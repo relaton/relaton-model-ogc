@@ -9,10 +9,6 @@ editorialgroup = element editorialgroup {
   committee, subcommittee?, workgroup?
 }
 
-BibDataExtensionType =
-  attribute schema-version { text }?,
-    doctype?, docsubtype?, flavor, editorialgroup, ics*
-
 stage = element stage { StageType }
 
 }
